@@ -7,7 +7,7 @@ Sem configurar o nome e o email não é possível fazer commit pelo terminal
 git config −−global user.name "Seu Nome Completo"
 git config −−global user.email "seu−email@example.com"
 ```
-#### Criando Personal Access Token (PAT) no GitHub
+### Criando Personal Access Token (PAT) no GitHub
 Um PAT, é um token pessoal, um substituto para sua senha. O PAT é necessário para poder confirmar quem você é na hora de realizar commits.
 1. Abra o GitHub
 2. Vá em Configurações 
@@ -20,4 +20,8 @@ Um PAT, é um token pessoal, um substituto para sua senha. O PAT é necessário 
 
 
 ### Salvar em cache as credenciais do PAT
+É mais prático salvar as credenciais no cache para não precisar colar o PAT sempre que for fazer alterações remotas.
+```
+git config −−global credential.helper 'cache −−timeout=3600'
+```
 ## Qual a diferença entre git merge e git rebase?
