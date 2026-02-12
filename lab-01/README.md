@@ -25,3 +25,5 @@ Um PAT, é um token pessoal, um substituto para sua senha. O PAT é necessário 
 git config −−global credential.helper 'cache −−timeout=3600'
 ```
 ## Qual a diferença entre git merge e git rebase?
+O git merge junta as alterações de uma branch na outra criando um commit que junta os dois códigos.
+O git rebase reescreve o histórico do projeto. Ele move os commits da branch atual para uma branch de destino 
