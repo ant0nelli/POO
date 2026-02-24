@@ -6,4 +6,5 @@
 
 ## Aulas
 - [Aula 01](aula-01) - Introdução à linguagem Java
-
+- [Aula 04](aula-04) - Revisão Java
+- [Aula 05](aula-05) - Revisão Java
