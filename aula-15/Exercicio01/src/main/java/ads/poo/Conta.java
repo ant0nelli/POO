@@ -31,11 +31,13 @@ public class Conta {
     //depositar
     public void depositar(double valor){
         this.saldo += (valor > 0) ? valor : 0;
+
     }
 
     //sacar
     public void sacar(double valor){
-        this.saldo += (valor > saldo) ? 0 : (valor>0) ? valor : 0;
+        this.saldo -= (valor > saldo) ? 0 : (valor>0) ? valor : 0;
+
     }
 
     //toString

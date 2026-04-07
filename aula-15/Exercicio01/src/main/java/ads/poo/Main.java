@@ -23,7 +23,7 @@ public class Main {
             }
         }
 
-        //Melhor utilizar esse para Arrays
+        //Melhor utilizar esse para Arrays (For each)
         for (var elemento: lista){
             if(elemento.equals("Maria")){
                 System.out.println(elemento);
@@ -39,6 +39,7 @@ public class Main {
 
         //Method reference - passar o método por referência, com o operador ::
         lista.forEach(System.out::println);
+
 
 
         //Remover todas as Strings Maria
