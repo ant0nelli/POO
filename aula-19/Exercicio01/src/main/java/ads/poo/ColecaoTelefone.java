@@ -8,6 +8,11 @@ import java.util.HashMap;
 public class Telefone {
     private HashMap<String,String> dados = new HashMap<>();
 
+    public Telefone(String rotulo, String valor){
+        this.rotulo = rotulo;
+        this.valor = valor;
+    }
+
     public boolean add(String rotulo, String valor){
         if ((rotulo.equals("pessoal") || rotulo.equals("comercial")) && verificarTelefone(valor) ){
             dados.put(rotulo, valor);
@@ -54,4 +59,10 @@ public class Telefone {
         return resultado;
     }
 
+
+    public 
+
+    public HashMap<String, String> getDados() {
+        return dados;
+    }
 }
