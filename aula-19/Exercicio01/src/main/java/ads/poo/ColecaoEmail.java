@@ -2,36 +2,44 @@ package ads.poo;
 
 import java.util.HashMap;
 
-public class Email {
-    private HashMap <String,String> dados = new HashMap<>();
+public class ColecaoEmail {
+    private HashMap<String, String> dados = new HashMap<>();
 
-    public boolean add(String rotulo, String valor){
+    public boolean add(String rotulo, String valor) {
 
         String eR = "^[\\w-\\+]+(\\.[\\w]+)*@[\\w-]+(\\.[\\w]+)*(\\.[a-z]{2,})$";
 
-        if (valor.matches(eR) && !dados.containsKey(rotulo)){
+        if (valor.matches(eR) && !dados.containsKey(rotulo)) {
             dados.put(rotulo, valor);
             return true;
-        }
-        else return false;
+        } else
+            return false;
     }
 
-
-    public boolean remove(String rotulo){
-        if(dados.containsKey(rotulo)){
+    public boolean remove(String rotulo) {
+        if (dados.containsKey(rotulo)) {
             dados.remove(rotulo);
             return true;
-        }else return false;
+        } else
+            return false;
     }
 
-    public boolean update (String rotulo, String valor){
-        if(dados.containsKey(rotulo)){
+    public boolean update(String rotulo, String valor) {
+        if (dados.containsKey(rotulo)) {
             dados.put(rotulo, valor);
-        }else return false;
+            return true;
+        } else
+            return false;
     }
 
-    public String toString(){
-        return dados.get(rotulo, valor);
+    public String toString() {
+        String resultado = "";
+        for (String rotulo : dados.keySet()) {
+            String email = dados.get(rotulo);
+
+            resultado += "Rotulo: " + rotulo + " Email: " + email + "\n";
+        }
+        return resultado;
     }
 
 }
