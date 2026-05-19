@@ -1,6 +1,6 @@
 package ads.poo;
 
-public class Arqueiro extends Personagem{
+public class Arqueiro extends Personagem implements Guerreiro{
 
     public Arqueiro() {
         super(35,2, 1);
@@ -11,6 +11,6 @@ public class Arqueiro extends Personagem{
     }
 
     public String atacar(){
-        return "Arqueiro" + super.atacar() + ataque;
+        return "Arqueiro atacando";
     }
 }

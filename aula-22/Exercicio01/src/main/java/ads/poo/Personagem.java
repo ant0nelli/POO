@@ -15,8 +15,4 @@ public abstract class Personagem {
         return " andando com velocidade ";
     }
 
-    public String atacar(){
-        return " atacando com força " ;
-    }
-
 }
