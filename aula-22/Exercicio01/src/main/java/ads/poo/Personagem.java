@@ -12,7 +12,7 @@ public abstract class Personagem {
     }
 
     public String mover(){
-        return " andando com velocidade ";
+        return "andando com velocidade ";
     }
 
 }

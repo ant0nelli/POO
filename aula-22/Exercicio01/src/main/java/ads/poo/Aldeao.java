@@ -1,6 +1,6 @@
 package ads.poo;
 
-public class Aldeao extends Personagem implements Guerreiro, Coletador{
+public class Aldeao extends Personagem implements Guerreiro, Coletor {
 
     public Aldeao() {
         super(25, 1,0.8);
@@ -20,6 +20,9 @@ public class Aldeao extends Personagem implements Guerreiro, Coletador{
         return "Aldeão coletando ouro";
     }
 
+    public String coletarMadeira(){
+        return "Aldeão coletando madeira";
+    }
 
 
 }

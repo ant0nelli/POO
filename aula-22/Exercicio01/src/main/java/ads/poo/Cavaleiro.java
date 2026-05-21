@@ -1,9 +1,9 @@
 package ads.poo;
 
-public class Cavaleiro extends Personagem{
+public class Cavaleiro extends Personagem implements Guerreiro{
 
-    public Cavaleiro(int vida, int ataque, double velocidade) {
-        super(vida, ataque, velocidade);
+    public Cavaleiro() {
+        super(50, 3, 2);
     }
 
 
